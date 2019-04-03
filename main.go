@@ -130,5 +130,5 @@ func main() {
 
 
 	//ejecutamos nuestro servidor, le pasamos el puerto de escucha y las routas
-	log.Fatal(http.ListenAndServe(":3000", router))
+	log.Fatal(http.ListenAndServe(":8080", router))
 }
