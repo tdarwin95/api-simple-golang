@@ -24,6 +24,7 @@ type Person struct{
 	ID string `json:"id,omitempty"`
 	FirstName string `json:"firstname,omitempty"`
 	LastName string `json:"lastname,omitempty"`
+	tlf string `json:"tlf,omitempty"`
 	Direccion *Direccion `json:"direccion,omitempty"`
 }
 //Difinicion de la direccion para las persona
@@ -113,8 +114,8 @@ func main() {
 	router := mux.NewRouter()
 
 	//llenamos el arreglo con append: recibe el arreglo y los datos
-	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"1", FirstName: "Darwin", LastName: "Garcia", Direccion: &Direccion{Ciudad:"Guayana", Estado:"Bolivar"}})
-	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"2", FirstName: "Juan", LastName: "Garcia"})
+	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"1", FirstName: "Darwin", LastName: "Garcia", tlf: "02372832398", Direccion: &Direccion{Ciudad:"Guayana", Estado:"Bolivar"}})
+	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"2", FirstName: "Juan", LastName: "Garcia", tlf: "02372832398"})
 
 	//endpoints (rutas del API)
 	//Ruta para obtener todas las personas recibe por parametro el nombre de la ruta y la funcion a ejecutar, se implementa el metodo GET
