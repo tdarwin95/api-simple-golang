@@ -116,6 +116,7 @@ func main() {
 	//llenamos el arreglo con append: recibe el arreglo y los datos
 	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"1", FirstName: "Darwin", LastName: "Garcia", tlf: "02372832398", Direccion: &Direccion{Ciudad:"Guayana", Estado:"Bolivar"}})
 	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"2", FirstName: "Juan", LastName: "Garcia", tlf: "02372832398"})
+	ArrPersonasBD = append(ArrPersonasBD, Person{ID:"3", FirstName: "Manuel", LastName: "Perez", tlf: "03456452398"})
 
 	//endpoints (rutas del API)
 	//Ruta para obtener todas las personas recibe por parametro el nombre de la ruta y la funcion a ejecutar, se implementa el metodo GET
